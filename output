@@ -1,0 +1,10 @@
+id,email,name,matched
+1,ptallen1@gmail.com," paul1",true
+2,ptallen2@gmail.com," paul2",true
+3,ptallen3@gmail.com," paul3",true
+4,ptallen4@gmail.com," paul4",true
+5,ptallen5@gmail.com," paul5",true
+6,ptallen6@gmail.com," paul6",true
+7,ptallen7@gmail.com," paul7",true
+8,ptallen8@gmail.com," paul8",true
+,ptallen10@gmail.com,,false
