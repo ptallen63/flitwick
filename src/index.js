@@ -40,12 +40,3 @@ const csv = Baby.unparse(newList);
 
 //Write to File
 outputToFile(csv);
-
-
-
-
-//if record matches then update record in list 1
-
-//output list 1 to new file
-
-//Print to screen results

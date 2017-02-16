@@ -1,2 +1,5 @@
 # flitwick
-A simple node CLI matching program. Takes 2 lists and matches them on a desired filed and outputs combined results. 
+A simple node CLI matching program. Takes 2 lists and matches them on a desired filed and outputs combined results.
+
+
+***STILL IN ACTIVE DEV & TESTING NOT FOR PRODUCTION***
