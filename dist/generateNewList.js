@@ -1,0 +1,2 @@
+"use strict";function _defineProperty(e,r,t){return r in e?Object.defineProperty(e,r,{value:t,enumerable:!0,configurable:!0,writable:!0}):e[r]=t,e}Object.defineProperty(exports,"__esModule",{value:!0});var generateNewList=function(e,r,t,n){var a=[];return a.push(t),e.forEach(function(e){var t=r[e];if(t)t.matched=!0,a.push(t);else{var i;a.push((i={},_defineProperty(i,n,e),_defineProperty(i,"matched",!1),i))}}),a};exports.default=generateNewList;
+//# sourceMappingURL=generateNewList.js.map

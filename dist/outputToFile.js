@@ -1,0 +1,2 @@
+"use strict";function _interopRequireDefault(e){return e&&e.__esModule?e:{default:e}}Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=function(e){_fs2.default.writeFile("./output.csv",e,"utf8",function(e){e?(console.log(e),console.log("Some error occured - file either not saved or corrupted file saved.")):console.log("output created")})};var _fs=require("fs"),_fs2=_interopRequireDefault(_fs);
+//# sourceMappingURL=outputToFile.js.map

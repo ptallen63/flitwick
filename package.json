@@ -26,6 +26,7 @@
     "csv": "^1.1.0",
     "csv-parse": "^1.1.7",
     "csv-stringify": "^1.0.4",
+    "dotenv": "^4.0.0",
     "figlet": "^1.2.0",
     "lodash": "^4.16.3",
     "progress": "^1.1.8"
@@ -43,13 +44,19 @@
     "eslint-plugin-jsx-a11y": "4.0.0",
     "eslint-plugin-react": "6.9.0",
     "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-concat": "^2.6.1",
     "gulp-eslint": "^3.0.1",
     "gulp-istanbul": "^1.1.1",
     "gulp-jshint": "^2.0.1",
     "gulp-mocha": "^3.0.1",
+    "gulp-sourcemaps": "^2.4.1",
+    "gulp-uglify": "^2.0.1",
+    "gulp-watch": "^4.3.11",
     "istanbul": "^0.4.5",
     "jshint": "^2.9.3",
     "jshint-stylish": "^2.2.1",
-    "mocha": "^3.1.0"
+    "mocha": "^3.1.0",
+    "pump": "^1.0.2"
   }
 }

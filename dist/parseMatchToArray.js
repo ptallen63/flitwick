@@ -1,0 +1,2 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=function(r,e){var t={},n=[];r.forEach(function(u){if(u===r[0])r[0].forEach(function(r){return n.push(r.trim())});else{var a={},f=0;u.forEach(function(r){a[n[f]]=r,f+=1});var o=a[e];o&&(t[o]=a)}});var u={};return n.forEach(function(r){u[r]=null}),u.matched=null,{data:t,fields:u}};
+//# sourceMappingURL=parseMatchToArray.js.map

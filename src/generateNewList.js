@@ -1,4 +1,4 @@
-export default function (matchArray, matchToData, fieldsObj, matchField) {
+const generateNewList = (matchArray, matchToData, fieldsObj, matchField) => {
   const newList = [];
   newList.push(fieldsObj);
 
@@ -17,4 +17,6 @@ export default function (matchArray, matchToData, fieldsObj, matchField) {
     }
   });
   return newList;
-}
+};
+
+export default generateNewList;

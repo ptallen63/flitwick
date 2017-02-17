@@ -1,4 +1,8 @@
-export default function (array) {
+const parseMatchListArray = (array) => {
+  // Test Array
+  if (array.constructor !== Array) {
+    return -1;
+  }
   const newArray = [];
   array.forEach((record) => {
     if (record[0] !== '') {
@@ -6,4 +10,6 @@ export default function (array) {
     }
   });
   return newArray;
-}
+};
+
+export default parseMatchListArray;
