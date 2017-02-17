@@ -14,6 +14,9 @@
   "keywords": [
     "matching"
   ],
+  "bin": {
+    "flitwick": "bin/flitwick.js"
+  },
   "author": "Paul Allen",
   "license": "MIT",
   "bugs": {

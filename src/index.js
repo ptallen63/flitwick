@@ -18,7 +18,7 @@ const flitwick = (matchListPath, matchToListPath, matchField) => {
   const matchToListParse = Baby.parseFiles(matchToListPath, [parseConfig]);
 
   // parse data
-  const matchArray = parseMatchListArray(matchListParse.data);
+  const matchArray = parseMatchListArray(matchListParse.data, matchField);
   const matchToObject = parseMatchToArray(matchToListParse.data, matchField);
 
   // Set matchTo data
