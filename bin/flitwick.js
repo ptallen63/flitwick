@@ -11,6 +11,7 @@ args.map((a) => {
   }
 
   if (a === '-help' || a === '-h') {
+    console.log('To run: flitwick <path to match list> <path to list to match with> <field to match on>');
     console.log('please refer to https://github.com/ptallen63/flitwick');
     process.exit();
   }

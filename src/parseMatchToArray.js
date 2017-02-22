@@ -1,3 +1,7 @@
+/* eslint-disable no-console */
+import ProgressBar from 'progress';
+import chalk from 'chalk';
+
 export default function (array, matchField) {
   if (typeof array !== 'object') {
     return -1;
@@ -11,6 +15,15 @@ export default function (array, matchField) {
     console.log(err);
     return -1;
   }
+
+  // Set up progress Bar
+  const bar = new ProgressBar('   Parsing the Match to list [:bar] :percent',
+    {
+      complete: '=',
+      incomplete: ' ',
+      width: 30,
+      total: array.length,
+    });
 
   // Get Fields position
 
@@ -33,12 +46,15 @@ export default function (array, matchField) {
         newObject[e] = obj;
       }
     }
+    bar.tick();
   });
   const fieldsObj = {};
   fields.forEach((f) => {
     fieldsObj[f] = null;
   });
   fieldsObj.matched = null;
+
+  if (bar.complete) { console.log(chalk.green('  \u2713 Match to list parsed! ... Time to go to charms with first years \n')); }
 
   return { data: newObject, fields: fieldsObj };
 }

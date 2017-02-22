@@ -12,8 +12,8 @@ import getMatchedTotal from './getMatchedTotal';
 import displayArt from './displayArt';
 
 const success = chalk.green;
-const error = chalk.red.bold;
-const info = chalk.blue.bold;
+// const error = chalk.red.bold;
+// const info = chalk.blue.bold;
 
 //  Get Files
 const flitwick = (matchListPath, matchToListPath, matchField) => {
@@ -47,12 +47,14 @@ const flitwick = (matchListPath, matchToListPath, matchField) => {
   // Write to File
   outputToFile(csv);
 
+
   // Wite some stats
   const matched = getMatchedTotal(newList);
 
 
-  console.log(success(`${matched} records matched`));
-  console.log(chalk.green('Created output.csv file'));
+  console.log(success(`   ${matched} records matched`));
+  console.log(chalk.green('   Created output.csv file'));
+  console.log(chalk.green('   \n Thank You for using FlitwickJS \n'));
 };
 
 export default flitwick;
