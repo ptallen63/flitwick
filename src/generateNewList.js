@@ -7,11 +7,12 @@ const generateNewList = (matchArray, matchToData, fieldsObj, matchField) => {
   newList.push(fieldsObj);
 
 // Set up progress Bar
-  const bar = new ProgressBar('   Mathcing up items [:bar] :percent',
+  const bar = new ProgressBar('   Mathcing up items [:bar] :percent :etas remaining',
     {
       complete: '=',
       incomplete: ' ',
       width: 30,
+      clear: true,
       total: matchArray.length,
     });
 

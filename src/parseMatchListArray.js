@@ -17,11 +17,12 @@ const parseMatchListArray = (array, matchField) => {
   }
 
   // Setup Progress Bar
-  const bar = new ProgressBar('   Parsing Match List [:bar] :percent',
+  const bar = new ProgressBar('   Parsing Match List [:bar] :percent :etas remaining',
     {
       complete: '=',
       incomplete: ' ',
       width: 30,
+      clear: true,
       total: array.length,
     });
 

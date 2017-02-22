@@ -17,11 +17,12 @@ export default function (array, matchField) {
   }
 
   // Set up progress Bar
-  const bar = new ProgressBar('   Parsing the Match to list [:bar] :percent',
+  const bar = new ProgressBar('   Parsing the Match to list [:bar] :percent :etas remaining',
     {
       complete: '=',
       incomplete: ' ',
       width: 30,
+      clear: true,
       total: array.length,
     });
 
@@ -54,7 +55,7 @@ export default function (array, matchField) {
   });
   fieldsObj.matched = null;
 
-  if (bar.complete) { console.log(chalk.green('  \u2713 Match to list parsed! ... Time to go to charms with first years \n')); }
+  if (bar.complete) { console.log(chalk.green('   \u2713 Match to list parsed! ... Time to go to charms with first years \n')); }
 
   return { data: newObject, fields: fieldsObj };
 }
