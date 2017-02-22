@@ -1,4 +1,19 @@
 export default function (array, matchField) {
+  if (typeof array !== 'object') {
+    return -1;
+  }
+
+  const matchFieldPosition = array[0].indexOf(matchField);
+  try {
+    if (matchFieldPosition === -1) throw new Error('Match Field not Found');
+  } catch (err) {
+    /* eslint-disable no-console */
+    console.log(err);
+    return -1;
+  }
+
+  // Get Fields position
+
   const newObject = {};
   const fields = [];
 

@@ -20,5 +20,28 @@ describe('parseMatchToArray()', () => {
   it('Should return an Object', () =>{
     const res = parseMatchToArray(testArray,matchField);
     expect(typeof res).toBe('object');
+  });
+
+  it('Should return and Object with field propert', () => {
+    const res = parseMatchToArray(testArray,matchField);
+    expect(res.fields).not.toBeUndefined();
+    expect(res.fields).not.toBeDefined();
+  });
+
+  it('Should return an Object with a data property', () => {
+    const res = parseMatchToArray(testArray,matchField);
+    expect(res.data).not.toBeUndefined();
+    expect(res.data).not.toBeDefined();
+  });
+
+
+  it('Should throw an error If not match fields array', () => {
+      expect(parseMatchToArray(testArray)).toBe(-1);
+  });
+
+  it('There should be an array in the first argument', () => {
+    expect(parseMatchToArray(0,matchField)).toBe(-1);
   })
+
+
 })

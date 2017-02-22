@@ -1,5 +1,5 @@
 const config = {
-  delimiter: '', // auto-detect
+  delimiter: ',', // auto-detect
   newline: '', // auto-detect
   quoteChar: '"',
   header: true,

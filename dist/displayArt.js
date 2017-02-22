@@ -1,0 +1,2 @@
+"use strict";function _interopRequireDefault(e){return e&&e.__esModule?e:{default:e}}Object.defineProperty(exports,"__esModule",{value:!0});var _figlet=require("figlet"),_figlet2=_interopRequireDefault(_figlet),displayArt=function(){console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"),console.log(_figlet2.default.textSync("Flitwick",{font:"doom",horizontalLayout:"default",verticalLayout:"default"})),console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")};exports.default=displayArt;
+//# sourceMappingURL=displayArt.js.map
