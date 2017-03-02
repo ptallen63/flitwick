@@ -1,2 +1,2 @@
-"use strict";Object.defineProperty(exports,"__esModule",{value:!0});var getMatchedTotal=function(e){var t=e.reduce(function(e,t){return t.matched?e+1:e},0);return t};exports.default=getMatchedTotal;
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0});var _typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t},getMatchedTotal=function(t){if("object"!==("undefined"==typeof t?"undefined":_typeof(t)))return-1;var e=t.reduce(function(t,e){return e.matched?t+1:t},0);return e};exports.default=getMatchedTotal;
 //# sourceMappingURL=getMatchedTotal.js.map
