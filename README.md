@@ -1,7 +1,7 @@
 # FlitwickJS
 A simple node CLI matching program. Takes 2 lists and matches them on a desired field and outputs the combined results.
 
-[![npm version](https://badge.fury.io/js/flitwick.svg)](https://badge.fury.io/js/neville)
+[![npm version](https://badge.fury.io/js/flitwick.svg)](https://badge.fury.io/js/neville) [![Build Status](https://travis-ci.org/ptallen63/flitwick.svg?branch=master)](https://travis-ci.org/ptallen63/flitwick)
 
 ***STILL IN ACTIVE DEV & TESTING.  
 NOT FOR PRODUCTION!***
