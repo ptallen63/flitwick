@@ -1,6 +1,6 @@
 import mocha from 'mocha';
 import 'chai-jasmine';
-import parseMatchToArray from '../src/parseMatchToArray';
+import parseMatchToArray from '../test-tmp/parseMatchToArray';
 
   const matchField = 'email';
   const testArray = [

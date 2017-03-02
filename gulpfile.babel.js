@@ -22,6 +22,15 @@ gulp.task('babel', () => {
     .pipe(gulp.dest('dist'));
 });
 
+gulp.task('babelify', () => {
+  return gulp.src('src/**/*.js')
+    .pipe(babel({
+      presets: ['es2015'],
+    }))
+
+    .pipe(gulp.dest('test-tmp'));
+});
+
 
 gulp.task('lint', () => {
     // ESLint ignores files with "node_modules" paths.
@@ -44,14 +53,12 @@ gulp.task('mocha', () => gulp.src('test/**/*.js', { read: false })
 // gulp-mocha needs filepaths so you can't have any plugins before it
     .pipe(mocha({ reporter: 'nyan' })));
 
-gulp.task('pre-test', () => {
-  return gulp.src(['src/**/*.js'])
-  .pipe(babel({
-    presets: ['es2015'],
-  }))
+gulp.task('pre-test', ['babelify'], () => {
+  return gulp.src(['test-tmp/**/*.js'])
   // Covering files
-    .pipe(istanbul())
+    .pipe(istanbul({includeUntested: true}))
   // Force `require` to return covered files
+
    .pipe(istanbul.hookRequire());
 });
 
@@ -63,7 +70,7 @@ gulp.task('test', ['pre-test'], () => {
 // Enforce a coverage of at least 80%
   .pipe(istanbul.enforceThresholds({
     thresholds: {
-      global: 75,
+      global: 65,
     },
   }));
 });

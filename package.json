@@ -52,7 +52,7 @@
     "gulp-sourcemaps": "^2.4.1",
     "gulp-uglify": "^2.0.1",
     "gulp-watch": "^4.3.11",
-    "istanbul": "^0.4.5",
+    "istanbul": "github:gotwarlost/istanbul#source-map",
     "jshint": "^2.9.3",
     "jshint-stylish": "^2.2.1",
     "mocha": "^3.1.0",

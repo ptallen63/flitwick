@@ -1,6 +1,6 @@
 import mocha from 'mocha';
 import 'chai-jasmine';
-import  flitwick from '../test-tmp/index';
+import generateNewList from '../test-tmp/generateNewList';
 
 const matchTo = [
   ['id','email'],
@@ -25,23 +25,17 @@ const match = [
   ['6','ptallen6@gmail.com'],
   ['7','ptallen7@gmail.com'],
   ['8','ptallen8@gmail.com'],
-  ['9','ptallen9@gmail.com'],
+  ['10','ptallen10@gmail.com'],
 ]
 
 const matchField = 'email';
 
-describe('indexs.js', () => {
-  it('should have matchlist', () => {
-    expect(function () {flitwick()}).toThrow(new Error('Match list argument not found'));
+const fields = ['id','email'];
+
+describe('generateNewList.js', () => {
+  it('should return object', () => {
+    const res = generateNewList(match, matchTo, fields, matchField);
+    expect(typeof res).toBe('object');
+    
   })
-
-  it('should have matchTo List', () => {
-    expect(function () {flitwick(match)}).toThrow(new Error('Match To list argument not found.'));
-  })
-
-  it('should have matchField List', () => {
-    expect(function () {flitwick(match,matchTo)}).toThrow(new Error('Match Field argument not found.'));
-  })
-
-
 })

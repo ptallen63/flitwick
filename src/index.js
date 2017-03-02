@@ -21,9 +21,9 @@ const flitwick = (matchListPath, matchToListPath, matchField) => {
   displayArt();
 
   // Check
-  if (!matchListPath) { console.log('No match list argument'); process.exit(); }
-  if (!matchToListPath) { console.log('No match to list argument'); process.exit(); }
-  if (!matchField) { console.log('No match field argument'); process.exit(); }
+  if (!matchListPath) { throw new Error("Match list argument not found."); }
+  if (!matchToListPath) { throw new Error("Match To list argument not found.");  }
+  if (!matchField) { throw new Error("Match Field argument not found.");  }
 
 
   // parse files

@@ -1,6 +1,6 @@
 import mocha from 'mocha';
 import 'chai-jasmine';
-import parseMatchListArray from '../src/parseMatchListArray';
+import parseMatchListArray from '../test-tmp/parseMatchListArray';
 
 const testArray = [
   ['id','email'],
