@@ -4,8 +4,8 @@
   "description": "A simple matching cli program",
   "main": "index.js",
   "scripts": {
-    "build": "echo \"No build script  yet\" && exit 1",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "gulp build ",
+    "test": "gulp test"
   },
   "repository": {
     "type": "git",
