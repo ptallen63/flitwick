@@ -1,6 +1,6 @@
 {
   "name": "flitwick",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "A simple matching cli program",
   "main": "index.js",
   "scripts": {
